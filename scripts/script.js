@@ -67,3 +67,13 @@ button.addEventListener('click', (evt) => {
         '<img src="' + imge.img + '">' +
         '<p>' + imge.text + '</p>';
 });
+
+
+// Robot animation
+var robotAnimation = bodymovin.loadAnimation({
+    container: document.getElementById('robot-animation'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '../animaties/robot-karakter-animation.json'
+})

@@ -100,7 +100,7 @@ header li a {
 /********/
 /* MAIN */
 /********/
-#eerste-pagina main {}
+
 
 /*************/
 /* section 1 */
@@ -154,6 +154,13 @@ header li a {
 
 /* https://codepen.io/kirstenallen/pen/MWwPYYm */
 /* https://codepen.io/rikschennink/pen/mjywQb */
+
+#robot-animation {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 @keyframes float {
     0% {
