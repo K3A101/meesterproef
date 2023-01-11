@@ -50,6 +50,7 @@ p,
 li {
     font-family: var(--tekst-font);
     font-weight: 400;
+    line-height: 1.7;
 }
 
 a {
@@ -266,4 +267,116 @@ header li a {
 .loader-finish {
     opacity: 0;
     pointer-events: none;
+}
+
+
+/*****************/
+/* TWEEDE PAGINA */
+/*****************/
+
+#tweede-pagina main{
+    display: grid;
+    gap: 5em;
+    place-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#tweede-pagina section {
+    display: grid;
+
+}
+
+
+/*************/
+/* SECTION 1 */
+/*************/
+#tweede-pagina  main{
+    background: url(../images/mechanic-pattern.png);
+}
+
+#tweede-pagina section:nth-of-type(1) {
+
+grid-template-columns: 1fr 2fr;
+padding: 3em;
+
+}
+
+#tweede-pagina section:nth-of-type(1) h1 {
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+#tweede-pagina section:nth-of-type(1) img {
+    width: 80%;
+    place-self: center;
+}
+
+#tweede-pagina section:nth-of-type(1) p {
+    position: relative;
+    background-color: var(--cyan-blue);
+    padding: 1em;
+}
+
+#tweede-pagina section:nth-of-type(1) p::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    bottom: -1em;
+    right: -2em;
+    width: 100px;
+    height:100px;
+    background-color: #29ffff;
+}
+
+#tweede-pagina section:nth-of-type(1) p::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 5em;
+    right: -2em;
+    width: 20px;
+    height: 20px;
+    background-color: #29ffff;
+}
+/*************/
+/* SECTION 2 */
+/*************/
+#tweede-pagina section:nth-of-type(2) {
+    position: relative;
+    background-color: var(--dark-blue);
+    grid-template-columns: 1fr 2fr;
+    padding: 3em;
+}
+
+#tweede-pagina section:nth-of-type(2) p {
+    color:var(--cyan-blue);
+    font-size: .9em
+}
+
+#tweede-pagina section:nth-of-type(2) p span {
+  font-size: 2em;
+}
+
+#tweede-pagina section:nth-of-type(2) h2 {
+    color: var(--cyan-blue);
+    font-family: var(--titel-font);
+    line-height: 1.5;
+    padding: 1em 0;
+
+    font-size: 2em;
+}
+
+/*************/
+/* SECTION 3 */
+/*************/
+
+#tweede-pagina section:nth-of-type(3) {
+     grid-template-columns: 1fr 2fr;
+     padding: 3em;
+}
+
+
+#tweede-pagina section:nth-of-type(3) img {
+    
 }
