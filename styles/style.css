@@ -94,6 +94,7 @@ header li a {
     padding: 1em .9em;
 }
 
+
 /******************/
 /* EERSTE PAGINA  */
 /******************/
@@ -278,12 +279,13 @@ header li a {
     display: grid;
     gap: 5em;
     place-items: center;
-    margin: 0 auto;
-    width: 90%;
+    /* margin: 0 auto;
+    width: 90%; */
 }
 
 #tweede-pagina section {
     display: grid;
+    padding: 3em 6em;
 
 }
 
@@ -291,14 +293,14 @@ header li a {
 /*************/
 /* SECTION 1 */
 /*************/
-#tweede-pagina  main{
+/* #tweede-pagina  main{
     background: url(../images/mechanic-pattern.png);
-}
+} */
 
 #tweede-pagina section:nth-of-type(1) {
-
+background-image: url(../images/mechanic-pattern.png);
 grid-template-columns: 1fr 2fr;
-padding: 3em;
+/* padding: 3em; */
 
 }
 
@@ -346,7 +348,7 @@ padding: 3em;
     position: relative;
     background-color: var(--dark-blue);
     grid-template-columns: 1fr 2fr;
-    padding: 3em;
+    /* padding: 3em; */
 }
 
 #tweede-pagina section:nth-of-type(2) p {
@@ -372,11 +374,24 @@ padding: 3em;
 /*************/
 
 #tweede-pagina section:nth-of-type(3) {
-     grid-template-columns: 1fr 2fr;
-     padding: 3em;
+     grid-template-columns: 1fr 1.5fr;
+     /* padding: 3em; */
 }
 
 
-#tweede-pagina section:nth-of-type(3) img {
-    
+#tweede-pagina section:nth-of-type(3) p {
+background-color: white;
+padding: 2em;
+}
+
+#tweede-pagina section:nth-of-type(3) p span {
+    display: block;
+    margin: 1em 0;
+}
+
+/**************/
+/* SECTION 4  */
+/**************/
+#tweede-pagina section:nth-of-type(3) {
+    grid-template-columns: ;
 }
