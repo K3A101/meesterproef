@@ -10,6 +10,7 @@
 :root {
     /* Website kleur */
     --violet: #662d91;
+    --lightest-purple: #faf3ff;
     --light-purple: #c5c9ff;
     --dark-blue: #21202d;
     --black: #000000;
@@ -34,7 +35,8 @@
 html,
 #eerste-pagina,
 #tweede-pagina {
-    height: 100%;
+    height: 100vh;
+  
 }
 
 #eerste-pagina {
@@ -275,7 +277,7 @@ header li a {
 /* TWEEDE PAGINA */
 /*****************/
 
-#tweede-pagina main{
+#tweede-pagina main {
     display: grid;
     gap: 5em;
     place-items: center;
@@ -298,9 +300,9 @@ header li a {
 } */
 
 #tweede-pagina section:nth-of-type(1) {
-background-image: url(../images/mechanic-pattern.png);
-grid-template-columns: 1fr 2fr;
-/* padding: 3em; */
+    background-image: url(../images/mechanic-pattern.png);
+    grid-template-columns: 1fr 2fr;
+    /* padding: 3em; */
 
 }
 
@@ -322,12 +324,12 @@ grid-template-columns: 1fr 2fr;
 
 #tweede-pagina section:nth-of-type(1) p::before {
     content: "";
-    z-index: 0;
+    z-index: -1;
     position: absolute;
     bottom: -1em;
     right: -2em;
     width: 100px;
-    height:100px;
+    height: 100px;
     background-color: #29ffff;
 }
 
@@ -341,6 +343,7 @@ grid-template-columns: 1fr 2fr;
     height: 20px;
     background-color: #29ffff;
 }
+
 /*************/
 /* SECTION 2 */
 /*************/
@@ -352,12 +355,13 @@ grid-template-columns: 1fr 2fr;
 }
 
 #tweede-pagina section:nth-of-type(2) p {
-    color:var(--cyan-blue);
-    font-size: .9em
+    color: var(--cyan-blue);
+    font-size: .9em;
+   
 }
 
 #tweede-pagina section:nth-of-type(2) p span {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 #tweede-pagina section:nth-of-type(2) h2 {
@@ -374,32 +378,99 @@ grid-template-columns: 1fr 2fr;
 /*************/
 
 #tweede-pagina section:nth-of-type(3) {
-     grid-template-columns: 1fr 1.5fr;
-     /* padding: 3em; */
+    position: relative;
+    grid-template-columns: 1fr 1.5fr;
+    /* padding: 3em; */
 }
 
-
-#tweede-pagina section:nth-of-type(3) p {
-background-color: white;
-padding: 2em;
+#tweede-pagina section:nth-of-type(3) h1 {
+        font-size: 1.5em;
+        padding-left: 1em;
+}
+#tweede-pagina section:nth-of-type(3)>p {
+    background-color: var(--light-purple);
+    position: absolute;
+    bottom: -25%;
+    left: 30%;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    width: 400px;
+    padding: 2em;
 }
 
-#tweede-pagina section:nth-of-type(3) p span {
-    display: block;
-    margin: 1em 0;
+#tweede-pagina section:nth-of-type(3)>p::before {
+    content: "";
+    background-color: var(--light-purple);
+    position: absolute;
+
+    right: 1em;
+    top: -3em;
+    height: 100px;
+    width: 100px;
+}
+
+#tweede-pagina section:nth-of-type(3)>p::after {
+    content: "";
+    background-color: var(--light-purple);
+    position: absolute;
+
+    left: 1em;
+    bottom: -1em;
+    height: 50px;
+    width: 50px;
+}
+
+#tweede-pagina section:nth-of-type(3) article p {
+    background-color: white;
+    padding: 2em;
+}
+
+#tweede-pagina section:nth-of-type(3) article p span {
+    font-weight: bold;
 }
 
 /**************/
 /* SECTION 4  */
 /**************/
-/* #tweede-pagina section:nth-of-type(3) {
-    grid-template-columns: ;
-} */
+#tweede-pagina section:nth-of-type(4) {
+    margin: 3em 0;
+    grid-template-columns: 1fr 1fr;
+}
 
+#tweede-pagina section:nth-of-type(4) article {
+    padding: 3em;
+}
 
+#tweede-pagina section:nth-of-type(4) h1 {
+    font-size: 3em;
+}
 
+/*************/
+/* SECTION 5 */
+/*************/
 
+/*************/
+/* SECTION 6 */
+/*************/
+
+#tweede-pagina section:nth-of-type(6) {
+    background-color: var(--lightest-purple);
+    position: relative;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: end;
+}
+
+#tweede-pagina section:nth-of-type(6) article {
+    padding: 2em;
+}
+
+#tweede-pagina section:nth-of-type(6) h1 {
+   padding: 3em 0;
+    font-size: 3vw;
+
+    
+}
 /*************/
 /* ANIMATIES */
 /*************/
-
