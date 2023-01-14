@@ -85,7 +85,8 @@ var robotAnimation = bodymovin.loadAnimation({
     render: 'svg',
     loop: true,
     autoplay: true,
-    path: './animaties/robot-karakter-animation.json'
+    path: './animaties/robot-animation.json'
 })
 
+// Shrimp animatie
 
