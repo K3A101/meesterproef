@@ -52,7 +52,7 @@ const afbeeldingen = [{
         img: "./images/old-nyc.png",
         text: "A neoclassism oil painting of a city",
     },
-    { 
+    {
         img: "./images/superwoman-comic.png",
         text: "A woman in a super hero comstume flying through the sky, pop art",
     },
@@ -81,14 +81,5 @@ button.addEventListener('click', (evt) => {
 });
 
 
-// Robot animation
-var robotAnimation = bodymovin.loadAnimation({
-    container: document.getElementById('robot-animation'),
-    render: 'svg',
-    loop: true,
-    autoplay: true,
-    path: './animaties/robot-animation.json'
-})
 
-// Shrimp animatie
 

@@ -472,7 +472,7 @@ header li a {
     bottom: -1em;
     height: 50px;
     width: 50px;
-} 
+}
 
 #tweede-pagina section:nth-of-type(3) article p {
     background-color: white;
@@ -502,6 +502,25 @@ header li a {
 /*************/
 /* SECTION 5 */
 /*************/
+/* De tijdlijn */
+#tweede-pagina section:nth-of-type(5) {
+    position: relative;
+
+}
+
+
+
+
+#v0 {
+    /* overflow:scroll; */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
 
 /*************/
 /* SECTION 6 */
@@ -568,7 +587,61 @@ header li a {
     width: 20vw;
 }
 
+/*************/
+/* SECTION 9 */
+/*************/
 
-/*************/
-/* ANIMATIES */
-/*************/
+/* #tweede-pagina section:nth-of-type(9) {
+    place-items: center;
+} */
+
+#tweede-pagina section:nth-of-type(9) article {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5em;
+
+}
+
+
+
+
+
+/* Bron: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
+
+.container {
+    position: relative;
+    width: 300px;
+}
+
+figure img {
+    display: block;
+    width: 300px;
+
+}
+
+.overlay {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--light-purple);
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+
+}
