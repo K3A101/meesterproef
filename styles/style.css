@@ -36,7 +36,7 @@ html,
 #eerste-pagina,
 #tweede-pagina {
     height: 100vh;
-  
+
 }
 
 #eerste-pagina {
@@ -217,7 +217,7 @@ header li a {
     font-weight: bold;
 }
 
-.box {
+.button {
     z-index: -1;
     position: absolute;
     background-color: var(--cyan-blue);
@@ -226,17 +226,17 @@ header li a {
 }
 
 
-.box.button-box1 {
+.button.button-box1 {
     right: 3em;
     bottom: -1em;
 }
 
-.box.button-box2 {
+.button.button-box2 {
     right: -3em;
     top: .5em;
 }
 
-.box.button-box3 {
+.button.button-box3 {
     right: -.5em;
 }
 
@@ -281,6 +281,7 @@ header li a {
     display: grid;
     gap: 5em;
     place-items: center;
+    overflow-x: hidden;
     /* margin: 0 auto;
     width: 90%; */
 }
@@ -295,12 +296,14 @@ header li a {
 /*************/
 /* SECTION 1 */
 /*************/
+/* Inleiding section */
 /* #tweede-pagina  main{
     background: url(../images/mechanic-pattern.png);
 } */
 
 #tweede-pagina section:nth-of-type(1) {
     background-image: url(../images/mechanic-pattern.png);
+    background-size: 30vw;
     grid-template-columns: 1fr 2fr;
     /* padding: 3em; */
 
@@ -347,17 +350,19 @@ header li a {
 /*************/
 /* SECTION 2 */
 /*************/
+/* Kunst is dood stuk */
 #tweede-pagina section:nth-of-type(2) {
     position: relative;
     background-color: var(--dark-blue);
     grid-template-columns: 1fr 2fr;
+    align-items: center;
     /* padding: 3em; */
 }
 
 #tweede-pagina section:nth-of-type(2) p {
     color: var(--cyan-blue);
     font-size: .9em;
-   
+
 }
 
 #tweede-pagina section:nth-of-type(2) p span {
@@ -373,30 +378,78 @@ header li a {
     font-size: 2em;
 }
 
+/* Blokjes */
+.box {
+    z-index: 1;
+    position: absolute;
+    background-color: var(--dark-blue);
+    width: 10vw;
+    height: 10vh;
+}
+
+.box.box1 {
+    top: -3em;
+    transform: translateX(30em);
+    width: 20vw;
+}
+
+.box.box2 {
+    bottom: -5em;
+    height: 12vh;
+    width: 7vw;
+    transform: translatex(10em);
+}
+
+.box.box3 {
+    bottom: -2em;
+    height: 12vh;
+    width: 7vw;
+    transform: translatex(20em);
+}
+
+.box.box4 {
+    bottom: -7em;
+    height: 19vh;
+    width: 20vw;
+    transform: translatex(30em);
+}
+
+.box.box5 {
+    bottom: -7em;
+    height: 15vh;
+    width: 15vw;
+    transform: translatex(68em);
+}
+
+
 /*************/
 /* SECTION 3 */
 /*************/
-
+/* Ai als kunstmedium */
 #tweede-pagina section:nth-of-type(3) {
     position: relative;
     grid-template-columns: 1fr 1.5fr;
+    align-items: center;
     /* padding: 3em; */
 }
 
 #tweede-pagina section:nth-of-type(3) h1 {
-        font-size: 1.5em;
-        padding-left: 1em;
+    font-size: 1.5em;
+    padding-left: 1em;
 }
+
+
+
 #tweede-pagina section:nth-of-type(3)>p {
     background-color: var(--light-purple);
     position: absolute;
-    bottom: -25%;
+    bottom: -15%;
     left: 30%;
-    font-size: 1.3em;
     text-align: center;
+    font-size: 1.3em;
     font-weight: bold;
-    width: 400px;
-    padding: 2em;
+    width: 50vw;
+    padding: 1.5em;
 }
 
 #tweede-pagina section:nth-of-type(3)>p::before {
@@ -419,7 +472,7 @@ header li a {
     bottom: -1em;
     height: 50px;
     width: 50px;
-}
+} 
 
 #tweede-pagina section:nth-of-type(3) article p {
     background-color: white;
@@ -466,11 +519,56 @@ header li a {
 }
 
 #tweede-pagina section:nth-of-type(6) h1 {
-   padding: 3em 0;
+    padding: 2em 0;
     font-size: 3vw;
 
-    
+
 }
+
+
+/*************/
+/* SECTION 7 */
+/*************/
+#tweede-pagina section:nth-of-type(7) {
+    background: url(../images/mechanic-pattern.png);
+    background-size: 30vw;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#tweede-pagina section:nth-of-type(7) figure {
+    object-fit: cover;
+    width: 130%;
+}
+
+#tweede-pagina section:nth-of-type(7) h1 {
+    font-size: 1.5em;
+    line-height: 1.5;
+
+}
+
+#tweede-pagina section:nth-of-type(7) span {
+    color: var(--violet);
+    font-size: 1.2em;
+}
+
+/*************/
+/* SECTION 8 */
+/*************/
+#tweede-pagina section:nth-of-type(8) {
+    position: relative;
+    grid-template-columns: 1fr;
+}
+
+#tweede-pagina section:nth-of-type(8) p {
+    position: absolute;
+    top: 10em;
+    left: 10em;
+    width: 20vw;
+}
+
+
 /*************/
 /* ANIMATIES */
 /*************/
