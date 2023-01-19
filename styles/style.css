@@ -23,7 +23,7 @@
     --tekst-font: 'interstate',
         sans-serif;
     ;
-    --link-font: 'input-serif',
+    --link-font: 'interstate',
         serif;
 
 }
@@ -33,13 +33,13 @@
 /*********************/
 
 html,
-#eerste-pagina,
-#tweede-pagina {
+#tweede-pagina,
+#home-pagina {
     height: 100vh;
 
 }
 
-#eerste-pagina {
+#tweede-pagina {
     background-image: url(../images/mechanic-pattern.png);
 }
 
@@ -68,6 +68,7 @@ button:hover {
 
 
 
+
 li {
     list-style: none;
 }
@@ -86,19 +87,26 @@ header ul {
     gap: 2em;
 }
 
-header ul li:nth-of-type(3) {
-    position: absolute;
-    right: 2em;
-}
+
 
 header li a {
-    background-color: var(--light-purple);
+   
     padding: 1em .9em;
+    transition:all .2s;
+ 
 }
 
+header li a:hover {
+   
+    border-bottom: 3px solid var(--light-purple);
+}
+header li img {
+   
+    width: 90%;
+}
 
 /******************/
-/* EERSTE PAGINA  */
+/* TWEEDE PAGINA  */
 /******************/
 
 /********/
@@ -109,7 +117,7 @@ header li a {
 /*************/
 /* section 1 */
 /*************/
-#eerste-pagina section:nth-of-type(1) {
+#tweede-pagina section:nth-of-type(1) {
     margin: 3em 0;
     display: grid;
     place-items: center;
@@ -202,10 +210,11 @@ header li a {
 
 /* Button-glitch */
 .button-container {
-    position: relative;
+    position: absolute;
     background-color: var(--cyan-blue);
     padding: 1.5em;
     width: fit-content;
+    bottom: 6em;
 }
 
 
@@ -213,7 +222,7 @@ header li a {
 .button-container button {
     background: none;
     border: none;
-    font-family: var(--link-font);
+    font-family: var(--titel-font);
     font-weight: bold;
 }
 
@@ -274,10 +283,10 @@ header li a {
 
 
 /*****************/
-/* TWEEDE PAGINA */
+/* EERSTE PAGINA */
 /*****************/
 
-#tweede-pagina main {
+#home-pagina main {
     display: grid;
     gap: 5em;
     place-items: center;
@@ -286,7 +295,7 @@ header li a {
     width: 90%; */
 }
 
-#tweede-pagina section {
+#home-pagina section {
     display: grid;
     padding: 3em 6em;
 
@@ -297,62 +306,64 @@ header li a {
 /* SECTION 1 */
 /*************/
 /* Inleiding section */
-/* #tweede-pagina  main{
+/* #home-pagina  main{
     background: url(../images/mechanic-pattern.png);
 } */
 
-#tweede-pagina section:nth-of-type(1) {
+#home-pagina section:nth-of-type(1) {
     background-image: url(../images/mechanic-pattern.png);
     background-size: 30vw;
     grid-template-columns: 1fr 2fr;
     height: 100vh;
+    align-items: center;
     /* padding: 3em; */
 
 }
 
-#tweede-pagina section:nth-of-type(1) h1 {
-    font-size: 2em;
-    padding-bottom: 1em;
+#home-pagina section:nth-of-type(1) article {
+display: grid;
+gap: 2em;
 }
 
-#tweede-pagina section:nth-of-type(1) img {
-    width: 80%;
+#home-pagina section:nth-of-type(1) h1 {
+    font-size: 2em;
+    /* padding-bottom: 1em; */
+}
+
+#home-pagina section:nth-of-type(1) img {
+    width: 90%;
     place-self: center;
 }
 
-#tweede-pagina section:nth-of-type(1) p {
+#home-pagina section:nth-of-type(1) p {
     position: relative;
     background-color: white;
-    padding: 1em;
+    /* padding: 1em;
+    margin-bottom: 1em; */
 }
 
-#tweede-pagina section:nth-of-type(1) p::before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    bottom: -1em;
-    right: -2em;
-    width: 100px;
-    height: 100px;
-    background-color: white;
+#home-pagina section:nth-of-type(1) a {
+    font-family: var(--titel-font);
+    background-color: var(--light-purple);
+    /* margin-top: 1em;*/
+    color: var(--black);
+    padding:  1em 2em; 
+   width: fit-content;
+    
+    
 }
 
-#tweede-pagina section:nth-of-type(1) p::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 5em;
-    right: -2em;
-    width: 20px;
-    height: 20px;
-    background-color: white;
+#home-pagina section:nth-of-type(1) a:hover {
+    background-color: var(--lightest-purple);
 }
+
+
 
 /*************/
 /* SECTION 2 */
 /*************/
 /* Kunst is dood stuk */
-#tweede-pagina section:nth-of-type(2) {
+#home-pagina section:nth-of-type(2) {
     position: relative;
     background-color: var(--dark-blue);
     grid-template-columns: 1fr 2fr;
@@ -360,17 +371,17 @@ header li a {
     /* padding: 3em; */
 }
 
-#tweede-pagina section:nth-of-type(2) p {
+#home-pagina section:nth-of-type(2) p {
     color: var(--cyan-blue);
     font-size: .9em;
 
 }
 
-#tweede-pagina section:nth-of-type(2) p span {
+#home-pagina section:nth-of-type(2) p span {
     font-size: 2em;
 }
 
-#tweede-pagina section:nth-of-type(2) h2 {
+#home-pagina section:nth-of-type(2) h2 {
     color: var(--cyan-blue);
     font-family: var(--titel-font);
     line-height: 1.5;
@@ -427,21 +438,21 @@ header li a {
 /* SECTION 3 */
 /*************/
 /* Ai als kunstmedium */
-#tweede-pagina section:nth-of-type(3) {
+#home-pagina section:nth-of-type(3) {
     position: relative;
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
     /* padding: 3em; */
 }
 
-#tweede-pagina section:nth-of-type(3) h1 {
+#home-pagina section:nth-of-type(3) h1 {
     font-size: 1.5em;
     padding-left: 1em;
 }
 
 
 
-#tweede-pagina section:nth-of-type(3)>p {
+#home-pagina section:nth-of-type(3)>p {
     background-color: var(--light-purple);
     position: absolute;
     bottom: -15%;
@@ -453,7 +464,7 @@ header li a {
     padding: 1.5em;
 }
 
-#tweede-pagina section:nth-of-type(3)>p::before {
+#home-pagina section:nth-of-type(3)>p::before {
     content: "";
     background-color: var(--light-purple);
     position: absolute;
@@ -464,7 +475,7 @@ header li a {
     width: 100px;
 }
 
-#tweede-pagina section:nth-of-type(3)>p::after {
+#home-pagina section:nth-of-type(3)>p::after {
     content: "";
     background-color: var(--light-purple);
     position: absolute;
@@ -475,12 +486,12 @@ header li a {
     width: 50px;
 }
 
-#tweede-pagina section:nth-of-type(3) article p {
+#home-pagina section:nth-of-type(3) article p {
     background-color: white;
     padding: 2em;
 }
 
-#tweede-pagina section:nth-of-type(3) article p span {
+#home-pagina section:nth-of-type(3) article p span {
     font-weight: bold;
 }
 
@@ -489,21 +500,21 @@ header li a {
 /**************/
 /* Verlamd door mogelijkheden */
 
-#tweede-pagina section:nth-of-type(4) {
+#home-pagina section:nth-of-type(4) {
     margin: 3em 0;
     grid-template-columns: 1fr 1fr;
 }
 
-#tweede-pagina section:nth-of-type(4) article {
+#home-pagina section:nth-of-type(4) article {
     padding: 3em;
 }
 
-#tweede-pagina section:nth-of-type(4) h1 {
+#home-pagina section:nth-of-type(4) h1 {
     font-size: 3em;
     margin-bottom: 1em;
 }
 
-#tweede-pagina section:nth-of-type(4) p span {
+#home-pagina section:nth-of-type(4) p span {
     display: block;
     margin: 1em 0;
 }
@@ -511,7 +522,7 @@ header li a {
 /* SECTION 5 */
 /*************/
 /* De tijdlijn */
-#tweede-pagina section:nth-of-type(5) {
+#home-pagina section:nth-of-type(5) {
     position: relative;
 
 }
@@ -534,18 +545,18 @@ header li a {
 /* SECTION 6 */
 /*************/
 
-#tweede-pagina section:nth-of-type(6) {
+#home-pagina section:nth-of-type(6) {
     background-color: var(--lightest-purple);
     position: relative;
     grid-template-columns: 1fr 1.5fr;
     align-items: end;
 }
 
-#tweede-pagina section:nth-of-type(6) article {
+#home-pagina section:nth-of-type(6) article {
     padding: 2em;
 }
 
-#tweede-pagina section:nth-of-type(6) h1 {
+#home-pagina section:nth-of-type(6) h1 {
     padding: 2em 0;
     font-size: 3vw;
 
@@ -556,7 +567,7 @@ header li a {
 /*************/
 /* SECTION 7 */
 /*************/
-#tweede-pagina section:nth-of-type(7) {
+#home-pagina section:nth-of-type(7) {
     background: url(../images/mechanic-pattern.png);
     background-size: 30vw;
     position: relative;
@@ -564,18 +575,18 @@ header li a {
     align-items: center;
 }
 
-#tweede-pagina section:nth-of-type(7) figure {
+#home-pagina section:nth-of-type(7) figure {
     object-fit: cover;
     width: 130%;
 }
 
-#tweede-pagina section:nth-of-type(7) h1 {
+#home-pagina section:nth-of-type(7) h1 {
     font-size: 1.5em;
     line-height: 1.5;
 
 }
 
-#tweede-pagina section:nth-of-type(7) span {
+#home-pagina section:nth-of-type(7) span {
     color: var(--violet);
     font-size: 1.2em;
 }
@@ -583,12 +594,12 @@ header li a {
 /*************/
 /* SECTION 8 */
 /*************/
-#tweede-pagina section:nth-of-type(8) {
+#home-pagina section:nth-of-type(8) {
     position: relative;
     grid-template-columns: 1fr;
 }
 
-#tweede-pagina section:nth-of-type(8) p {
+#home-pagina section:nth-of-type(8) p {
     position: absolute;
     top: 10em;
     left: 10em;
@@ -599,11 +610,11 @@ header li a {
 /* SECTION 9 */
 /*************/
 
-/* #tweede-pagina section:nth-of-type(9) {
+/* #home-pagina section:nth-of-type(9) {
     place-items: center;
 } */
 
-#tweede-pagina section:nth-of-type(9) article {
+#home-pagina section:nth-of-type(9) article {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
