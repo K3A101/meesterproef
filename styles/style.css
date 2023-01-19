@@ -305,6 +305,7 @@ header li a {
     background-image: url(../images/mechanic-pattern.png);
     background-size: 30vw;
     grid-template-columns: 1fr 2fr;
+    height: 100vh;
     /* padding: 3em; */
 
 }
@@ -321,7 +322,7 @@ header li a {
 
 #tweede-pagina section:nth-of-type(1) p {
     position: relative;
-    background-color: var(--cyan-blue);
+    background-color: white;
     padding: 1em;
 }
 
@@ -333,7 +334,7 @@ header li a {
     right: -2em;
     width: 100px;
     height: 100px;
-    background-color: #29ffff;
+    background-color: white;
 }
 
 #tweede-pagina section:nth-of-type(1) p::after {
@@ -344,7 +345,7 @@ header li a {
     right: -2em;
     width: 20px;
     height: 20px;
-    background-color: #29ffff;
+    background-color: white;
 }
 
 /*************/
@@ -486,6 +487,8 @@ header li a {
 /**************/
 /* SECTION 4  */
 /**************/
+/* Verlamd door mogelijkheden */
+
 #tweede-pagina section:nth-of-type(4) {
     margin: 3em 0;
     grid-template-columns: 1fr 1fr;
@@ -497,8 +500,13 @@ header li a {
 
 #tweede-pagina section:nth-of-type(4) h1 {
     font-size: 3em;
+    margin-bottom: 1em;
 }
 
+#tweede-pagina section:nth-of-type(4) p span {
+    display: block;
+    margin: 1em 0;
+}
 /*************/
 /* SECTION 5 */
 /*************/
@@ -599,7 +607,7 @@ header li a {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: .5em;
+    gap: 1em;
 
 }
 
