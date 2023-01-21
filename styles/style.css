@@ -715,3 +715,43 @@ figure img {
     padding: 2em;
     text-align: center;
 }
+
+
+/**************/
+/* SECTION 10 */
+/**************/
+/* Zwaaiende karakter */
+
+#home-pagina section:nth-of-type(10) {
+    position: relative;
+    grid-template-columns: 2fr 1fr;
+
+    align-items: center;
+}
+
+#home-pagina section:nth-of-type(10) h1 {
+    font-size: 3em;
+}
+
+#home-pagina section:nth-of-type(10) article{
+display: grid;
+gap: 2em;
+
+}
+
+#home-pagina section:nth-of-type(10) a {
+    font-family: var(--titel-font);
+    background-color: var(--light-purple);
+    color: var(--black);
+    padding: 1em 2em;
+    width: fit-content;
+}
+
+#home-pagina section:nth-of-type(10) a:hover {
+background-color: var(--lightest-purple);
+}
+
+#home-pagina section:nth-of-type(10) figure {
+    place-self: end;
+    width: 50%;
+}
