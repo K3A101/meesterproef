@@ -219,7 +219,7 @@ header li img {
     background-color: var(--cyan-blue);
     padding: 1.5em;
     width: fit-content;
-    bottom: 6em;
+    bottom: 9%;
 }
 
 
@@ -229,6 +229,9 @@ header li img {
     border: none;
     font-family: var(--titel-font);
     font-weight: bold;
+}
+.button-container:hover {
+   background-color: #b0ffff;
 }
 
 .button {
@@ -755,3 +758,32 @@ background-color: var(--lightest-purple);
     place-self: end;
     width: 50%;
 }
+
+/****************/
+/* DERDE PAGINA */
+/****************/
+/* Persoonlijke visie pagina  */
+#derde-pagina {
+    background: url(../images/mechanic-pattern.png);
+}
+
+
+
+#derde-pagina section:nth-of-type(1) {
+    background-color: white;
+    padding: 3em;
+  
+  margin: 0 auto;
+  width: 50%;
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+
+#derde-pagina section:nth-of-type(1) h1 {
+    padding: 1.5em;
+}
+}
+
+
