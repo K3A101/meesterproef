@@ -658,6 +658,8 @@ header li img {
 /*************/
 /* DE gallerij met AI kunstwerken */
 #home-pagina section:nth-of-type(9) {
+    background-color: var(--lightest-purple);
+    position: relative;
   gap: 2em;
 }
 #home-pagina section:nth-of-type(9) h1{
@@ -718,6 +720,41 @@ figure img {
     text-align: center;
 }
 
+
+.boxes {
+    background-color: var(--lightest-purple);
+    z-index: -1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+}
+
+.boxes.boxes-one {
+right: -25%;
+}
+.boxes.boxes-two {
+    top: -10%;
+    left: -10%;
+}
+
+.boxes.boxes-three {
+    bottom: -5%;
+}
+
+.boxes.boxes-four {
+    right: -10%;
+    top: 25%;
+    width: 280px;
+    height: 280px;
+}
+
+.boxes.boxes-five {
+    left: -15%;
+    top: 50%;
+     width: 300px;
+     height: 300px;
+}
 
 /**************/
 /* SECTION 10 */

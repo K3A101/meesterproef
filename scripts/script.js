@@ -1,7 +1,7 @@
 console.log("Hello world");
 
 
-
+// Loading scherm
 var loader;
 
 function loadNow(opacity) {
@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
     loadNow(1);
 });
 // https://nishanc.medium.com/how-to-add-a-gif-pre-loader-to-your-website-dcfd29bd055d
+
+// Beeldgenerator
 
 const afbeeldingen = [{
         img: "./images/new-york-city.png",
