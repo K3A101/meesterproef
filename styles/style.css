@@ -485,7 +485,6 @@ header li img {
 
 #home-pagina section:nth-of-type(3) h1 {
     font-size: 2em;
-    padding-left: 1em;
 }
 
 
@@ -525,7 +524,7 @@ header li img {
 
 #home-pagina section:nth-of-type(3) article p {
     background-color: white;
-    padding: 2em;
+    padding: 2em 0;
 }
 
 #home-pagina section:nth-of-type(3) article p span {
@@ -786,4 +785,12 @@ background-color: var(--lightest-purple);
 }
 
 
+#derde-pagina section:nth-of-type(1) p {
+    line-height: 1.7;
+    padding: 2em;
+}
 
+#derde-pagina section:nth-of-type(1) p span {
+    display: block;
+    margin: 1em 0;
+}
